@@ -1,0 +1,229 @@
+
+
+*{padding: 0;
+  margin: 0}
+
+.function-button{
+  background-color: #1b2c90;
+  padding: 10px;
+  margin: 10px;
+  font-size: 18px;
+  color: aliceblue;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.function-button:hover{
+  background-color: #283baf;
+  color: #ffb576;
+}
+.summary{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+.totalQuantity{
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: underline;
+  justify-content: center;
+
+}
+.clearAll{
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  justify-content: center;
+
+}
+.delete-button{
+  background-color: #8b1717;
+  padding: 10px;
+  margin: 10px;
+  font-size: 18px;
+  color: aliceblue;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.delete-button:hover{
+  background-color: red;
+}
+
+
+.product-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+.container{
+  display: flex;
+  border: 1px solid black;
+  margin: 10px;
+  border-radius: 10px;
+}
+.name{
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+}
+.code{
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: underline;
+}
+.description{
+  text-align: justify;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+.price{
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+}
+.buyZone{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 15%;
+}
+.buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+}
+
+
+@media(min-width: 1600px){
+
+  .container{
+    width: 90%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .info{
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 10%
+  }
+  .description{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .basis{
+    width: 90%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+}
+@media (max-width: 1600px) and (min-width: 1000px){
+
+  .container{
+    width: 90%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  .basis{
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .info{
+    padding-left: 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 15%
+  }
+  .description{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .basis{
+    width: 90%;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+}
+@media (max-width: 1000px) and (min-width: 310px){
+
+  .container{
+    padding-top: 10px;
+    width: 300px;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+  }
+  .info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%
+  }
+  .description{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .buyZone{
+    width: 100%;
+  }
+  .basis{
+    padding-top: 10px;
+    width: 300px;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+}
+

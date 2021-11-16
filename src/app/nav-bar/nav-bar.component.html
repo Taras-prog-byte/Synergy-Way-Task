@@ -1,0 +1,16 @@
+<div class="navBar">
+  <a routerLink="/list">
+    <div class="nav-button">
+      <fa-icon [icon]="faList"></fa-icon>
+    </div>
+  </a>
+
+  <a routerLink="/storage">
+  <div class="nav-button">
+    <div class="numOfProds" *ngIf="numOfProducts!=0">{{numOfProducts}}</div>
+    <fa-icon [icon]="faShoppingCart"></fa-icon></div>
+  </a>
+</div>
+<router-outlet></router-outlet>
+
+

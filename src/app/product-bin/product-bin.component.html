@@ -1,0 +1,43 @@
+<div class="product-list">
+
+  <div class="container" *ngFor = "let p of finalList">
+    <div class="info">
+      <div class="name">{{p.name}}</div>
+      <div class="code">id: {{p.id}}</div>
+    </div>
+    <div class="description">{{p.label}}</div>
+    <div class="buyZone">
+      <div class="price">
+        <div class="value">{{p.price}} $</div>
+      </div>
+      <div class="quantity">{{p.quantity}} pcs</div>
+      <div class="buttons">
+        <div class="function-button" (click)="findAndDelete(p.id)"><fa-icon [icon]="faTrashAlt"></fa-icon></div>
+      </div>
+    </div>
+
+
+  </div>
+
+
+
+
+</div>
+
+
+
+<div class="summary">
+  <div class="basis">
+    <div class="totalQuantity">
+      Total quantity of products: {{totalPrice[0]}}
+    </div>
+    <div class="totalQuantity">
+      Total price: {{totalPrice[1]}}
+    </div>
+    <div class="clearAll">
+      <div class="delete-button" (click)="clearAll()">Clear shopping cart</div>
+
+    </div>
+  </div>
+
+  </div>

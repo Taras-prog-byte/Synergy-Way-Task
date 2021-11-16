@@ -1,0 +1,51 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.navBar{
+  background-color: #6b7dff;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.nav-button{
+  background-color: #1b2c90;
+  padding: 10px;
+  margin: 10px;
+  font-size: 18px;
+  color: aliceblue;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.nav-button:hover{
+  background-color: #283baf;
+  color: #ffb576;
+}
+
+.numOfProds{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f1a3b;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  position: absolute;
+  left: 60%;
+  top: 10%;
+  color: #e5e7e0;
+  z-index: 5;
+}
+
+@media (min-width: 1280px) and (max-width: 1920px){
+
+}

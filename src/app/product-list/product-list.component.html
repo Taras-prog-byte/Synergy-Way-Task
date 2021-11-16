@@ -1,0 +1,20 @@
+<div class="product-list">
+
+  <div class="container" *ngFor = "let p of productList">
+    <div class="info">
+      <div class="name">{{p.name}}</div>
+      <div class="code">id: {{p.id}}</div>
+    </div>
+    <div class="description">{{p.label}}</div>
+    <div class="buyZone">
+      <div class="price">
+        <div class="value">{{p.price}} $</div>
+      </div>
+      <div class="buttons">
+        <div class="function-button" (click)="buy(p.id)"><fa-icon [icon]="faCartPlus"></fa-icon></div>
+      </div>
+    </div>
+
+  </div>
+
+</div>

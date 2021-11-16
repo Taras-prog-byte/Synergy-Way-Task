@@ -1,0 +1,16 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.nav-button{
+  background-color: #1b2c90;
+  padding: 10px;
+  margin: 10px;
+  font-size: 18px;
+  color: aliceblue;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
